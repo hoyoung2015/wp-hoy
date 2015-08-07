@@ -23,9 +23,13 @@ class Zan_Search extends WP_Widget {
     echo $before_widget;
     ?>
       <div class="search">
-         <form class="form-inline clearfix" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
-            <input class="form-control" type="text" name="s" id="s" placeholder="搜索..." />
-            <button type="submit" class="btn btn-danger btn-small" name="submit" ><i class="fa fa-search"></i></button>
+         <form method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+			<div class="input-group">
+				<input class="form-control" type="text" name="s" id="s" placeholder="搜索..." />
+				<span class="input-group-btn">
+					<button class="btn btn-danger" type="submit" name="submit"><i class="fa fa-search"></i></button>
+				</span>
+			</div>
          </form>
       </div>
     <?php echo $after_widget;

@@ -19,9 +19,76 @@
 /* =========================== 2.响应式 =========================== */
 /* =========================== 响应式结束 =========================== */
 /* =========================== 1.通用样式 =========================== */
+body {
+    background-color: #f0f0f0;
+	color: #3d4450;
+	font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+.well {
+    background-color: #ffffff;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.thumbnail{
+    display: inline-block;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1.428571429;
+    background-color: #ffffff;
+    border-radius: 4px;
+	border:none;
+	padding:0;
+	margin-bottom:0;
+}
+/*重写btn-danger*/
+.btn-danger {
+  color: #fff;
+  background-color: #0593D3;
+  border-color: #0482BA;
+}
+.btn-danger:focus,
+.btn-danger.focus {
+  color: #fff;
+  background-color: #0482BA;
+  border-color: #0482BA;
+}
+.btn-danger:hover {
+  color: #fff;
+  background-color: #0482BA;
+  border-color: #0482BA;
+}
+
 ::selection {
   background: #0593d3;
   color: white;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #0593D3;
+}
+.navbar{
+	margin-bottom:0;
+	border:none;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #aaaaaa;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #333333;
+}
+.navbar-inverse .navbar-toggle .fa-reorder {
+    color: #ffffff;
+}
+.label-zan {
+    color: #777;
+}
+
+
+#mainstay{
+	margin-bottom:20px;
 }
 /***********************/
 
@@ -39,13 +106,9 @@ font-size: 1.23em;
 text-align: center;
 }
 /*******************/
-body {
-  word-wrap: break-word;
-  font-size: 14px;
-}
 body.nav-fixed {
   position: relative;
-  padding-top: 54px;
+  padding-top: 50px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   body.nav-fixed {
@@ -441,33 +504,10 @@ html.ie #ds-thread .ds-no-transition#ds-reset .ds-post-button {
 /*搜索框*/
 div.search {
   margin-bottom: 20px;
-  border: 1px solid #0482ba;
   padding: 8px;
   border-radius: 4px;
-}
-div.search input[type="text"] {
-  width: 84%;
-  float: left;
-  margin-right: 10px;
-}
-@media (max-width: 1199px) and (min-width: 992px) {
-  div.search input[type="text"] {
-    width: 82%;
-  }
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  div.search input[type="text"] {
-    width: 93%;
-  }
-}
-@media (max-width: 767px) {
-  div.search input[type="text"] {
-    width: 82%;
-  }
-}
-div.search button {
-  float: left;
-  margin-top: 2px;
+  background-color:#fff;
+  border: 1px solid #e3e3e3;
 }
 /*幻灯片*/
 .metaslider {
@@ -566,10 +606,11 @@ div.search button {
   transition: all .3s ease;
 }
 ul.pills-zan {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 ul.pills-zan li {
   margin-left: 5px;
+  margin-bottom: 10px;
 }
 #sidebar-tags a:hover {
   color: #0593d3;
@@ -772,7 +813,7 @@ ul.pills-zan li {
   color: white;
 }
 .navbar-fixed-top #if-fixed i {
-  color: #1abc9c;
+  color: #3498DB;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -811,7 +852,7 @@ ul.pills-zan li {
 .zan-breadcrumb {
   background-color: white;
   box-shadow: 0 0px 5px #c2c2c2;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 #article-list {
   margin-top: 20px;

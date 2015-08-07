@@ -8,7 +8,7 @@
 
 <!-- 内容主体 -->
 <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-<article class="article container well">
+<article class="article well">
 
 	<!-- 面包屑 -->
 	<div class="breadcrumb">

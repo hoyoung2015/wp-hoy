@@ -66,7 +66,7 @@ function zan_scripts_styles() {
 
   wp_enqueue_style( 'fontawesome-style', get_template_directory_uri() . '/ui/font-awesome/css/font-awesome.min.css', array(), '4.0.1');
 
-  wp_enqueue_style( 'icheck-style', get_template_directory_uri() . '/ui/css/flat/green.css', array());
+  wp_enqueue_style( 'icheck-style', get_template_directory_uri() . '/ui/css/flat/blue.css', array());
 
   wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/ui/css/core.css', array(), '2.1.0' );
 
