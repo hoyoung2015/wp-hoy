@@ -78,11 +78,13 @@
 <body <?php body_class(); ?>>
 <header id="zan-header" class="navbar navbar-inverse">
   <nav class="container">
-    <a href="<?php echo site_url(); ?>"><div class="navbar-brand"></div></a>
-    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="fa fa-reorder fa-lg"></span>
-    </button>
+    <div class="navbar-header">
+		<a href="<?php echo site_url(); ?>"><div class="navbar-brand"></div></a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="fa fa-reorder fa-lg"></span>
+		</button>
+	</div>
     <div class="navbar-collapse bs-navbar-collapse collapse">
       <?php
         $defaults = array(

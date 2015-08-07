@@ -381,6 +381,9 @@ html.ie #ds-thread .ds-no-transition#ds-reset .ds-post-button {
   .hot .visible-lg.visible-sm {
     display: inline-block !important;
   }
+  .navbar-header {
+    float: none;
+  }
   .navbar-brand {
     margin-right: auto !important;
     margin-left: auto !important;
