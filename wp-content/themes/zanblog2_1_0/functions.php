@@ -48,6 +48,15 @@ function deel_strimwidth($str ,$start , $width ,$trimmarker ){
 function dopt($e){
 		return stripslashes(get_option($e));
 	}
+//文章内容里是否有图片
+function has_content_thumbnail(){
+	global $post;
+	$post_thumbnail_src = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	return $matches [1] [0];   //获取该图片 src
+}
 //输出缩略图地址
 function post_thumbnail_src(){
     global $post;

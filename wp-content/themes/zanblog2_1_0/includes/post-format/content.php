@@ -1,6 +1,6 @@
 <?php  
 $_thumbnail = false;
-if( has_post_thumbnail() || !dopt('d_thumbnail_b') ){
+if( has_post_thumbnail() || has_content_thumbnail() ){
 	$_thumbnail = true;
 }
 ?>
@@ -27,7 +27,7 @@ if( has_post_thumbnail() || !dopt('d_thumbnail_b') ){
 		<?php if( !$_time ){ ?><span class="label label-zan"><i class="fa fa-clock-o"></i> <?php echo timeago( get_gmt_from_date(get_the_time('Y-m-d G:i:s')) ) ?></span><?php } ?>
 			<span class="label label-zan"><i class="fa fa-user"></i> <?php the_author_posts_link(); ?></span>
 			<span class="label label-zan"><i class="fa fa-eye"></i> <?php if(function_exists('the_views')) { the_views(); } ?></span>
-		<a class="btn btn-danger pull-right read-more" href="<?php the_permalink() ?>"  title="详细阅读 <?php the_title(); ?>">阅读全文 <span class="badge"><?php comments_number( '0', '1', '%' ); ?></span></a>
+		<a class="btn btn-danger pull-right read-more" href="<?php the_permalink() ?>"  title="详细阅读 <?php the_title(); ?>">阅读全文<span class="badge"><?php comments_number( '0', '1', '%' ); ?></span></a>
 		</div>
 	</section>
 	<!-- 大型设备文章属性结束 -->
